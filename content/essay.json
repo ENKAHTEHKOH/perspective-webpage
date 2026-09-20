@@ -1,65 +1,69 @@
 {
-  "title": "My Thoughts",
+  "title": "My Thoughts", 
   "sections": [
+    {
+        "id": 0,
+        "text": "<h6>An <span class=\"keyword\">18-20-minute read</span>, depending on your pace.</h6>"
+    },
     {
         "id": 1,
         "text": "The recent events that have shaken the country are truly <span class=\"keyword\">nightmarish</span>."
     },
     {
         "id": 2,
-        "text": "Nightmare is the only word that comes close, and even it is not enough. A nightmare is something you wake up from; you open your eyes and the danger dissolves with the dark. This does not dissolve. We wake up every morning and it is still there, waiting for us in the news."
+        "text": "<span class=\"keyword\">Nightmare</span> is the only word that comes close, and even it is not enough. A nightmare is something you wake up from; you open your eyes and the danger dissolves with the dark. This does not dissolve. We wake up every morning, and it is still there, waiting for us in the news."
     },
     {
         "id": 3,
-        "text": "It comes to us in headlines first. Another body found. Another family shattered. We read it with our tea still hot, on our way to work, while the country carries on as if a day is a day. And the people in those headlines had days. They had plans, and people who loved them, and children who waved goodbye at the door without knowing it was the last one."
+        "text": "It comes to us in headlines first. <span class=\"keyword\">Another body found</span>. Another family shattered. We read it with our tea still hot on our way to work, school, while the country carries on as if a day is a day. And the people in those headlines had days. They had plans, and people who loved them, and children who waved goodbye at the door without knowing it was the last one."
     },
     {
         "id": 4,
-        "text": "The country is shaken because the fear does not stay where the crime happened. A mother in a town she has never left reads about a woman in a town she has never seen, and feels it in her chest as if it happened on her own street. We carry the grief of strangers because we know, with a <span class=\"keyword\">dread</span> we do not always say out loud, that it could be our daughter, our sister, our mother. And when it can be any of us, the events stop being separate. They become one long thing. A <span class=\"keyword\">pattern</span>. A truth about where we live that we have not yet found the words to face."
+        "text": "The country is shaken because the fear does not stay where the crime happened. A mother in a town she has never left reads about a woman in a town she has never seen and feels it in her chest as if it happened on her own street. We carry the grief of strangers because we know, with a <span class=\"keyword\">dread</span> we do not always say out loud, that it could be our daughter, our sister, our mother. And when it can be any of us, the events stop being separate. They become one long thing. A <span class=\"keyword\">pattern</span>. A truth about where we live that we have not yet found the words to face."
     },
     {
         "id": 5,
-        "text": "Someone made a decision that they are going to take the lives of innocent people. It is more than a crime issue because this <span class=\"keyword\">entity</span> is not looking to gain anything monetarily, but to violate the existence of innocent people. I keep coming back to the word decision. It matters. This was not an accident, not a moment of rage that got out of hand. Somewhere, somehow, a choice was made. A plan was formed. And a plan can be repeated, passed down, learned, so the horror is not a once-off, it is a <span class=\"keyword\">method</span>, and a method does not stop on its own."
+        "text": "Someone made a <span class=\"keyword\">decision</span> that they are going to take the lives of innocent people. It is more than a crime issue because this <span class=\"keyword\">entity</span> is not looking to gain anything monetarily, but to violate the existence of innocent people. I keep coming back to the word decision. It matters. This was not an accident, not a moment of rage that got out of hand. Somewhere, somehow, a <span class=\"keyword\">choice</span> was made. A plan was formed. And a plan can be repeated, passed down, learned, so the horror is not a once-off, it is a <span class=\"keyword\">method</span>, and a method does not stop on its own."
     },
     {
         "id": 6,
-        "text": "I also keep coming back to <span class=\"keyword\">innocent</span>, and I do not use it carelessly. It means the women were not targets because of what they did. They were targets because of what they are. Nothing they could have said, worn, done, or avoided would have changed the outcome, because the decision existed before they were even in the room. That is what separates this from the crimes we have learned to understand. Crime, the way we usually speak about it, wants something. It wants money, possessions, revenge, a score settled, a point made. We can arrange it in our minds, however ugly the arrangement, because there is a logic to it. But when there is nothing to gain, the logic collapses, and we are left holding something we have no shape for."
+        "text": "I also keep coming back to <span class=\"keyword\">innocent</span>, and I do not use it carelessly. It means the women were not targets because of what they did. They were targets because of what they are. Nothing they could have <span class=\"keyword\">said, worn, done, or avoided</span> would have changed the outcome, because the decision existed before they were even in the room. That is what separates this from the crimes we have learned to understand. Crime, the way we usually speak about it, wants something. It wants money, possessions, revenge, a score settled, a point made. We can arrange it in our minds, however ugly the arrangement, because there is a logic to it. But when there is nothing to gain, the logic collapses, and we are left holding something we have no shape for."
     },
     {
         "id": 7,
-        "text": "No money. No property. No score. Nothing was being taken from these women, except everything."
+        "text": "No money. No property. No score. Nothing was being taken from these women, except <span class=\"keyword\">everything</span>."
     },
     {
         "id": 8,
-        "text": "So I reach for entity, because entity is the only word that does not force me to give the thing a single face. A man I could understand in the terrible sense of arranging him into a story, what made him, what hardened him, what he did. But this thing is bigger than one man. It moves through families, through the places where women are meant to be safe, through the silences of institutions. It is a belief and a permission. It teaches that a woman's existence is a resource, and a resource can be used up."
+        "text": "So, I reach for entity, because entity is the only word that does not force me to give the thing a single face. A man I could understand in the terrible sense of arranging him into a story, what made him, what hardened him, what he did. But this thing is bigger than one man. It moves through families, through the places where women are meant to be safe, through the silences of institutions. It is a belief and a permission. It teaches that a woman's existence is a resource, and a resource can be used up."
     },
     {
         "id": 9,
-        "text": "And when the aim is existence itself, the violation is complete. It is not enough that she dies. She is made to be gone. <span class=\"keyword\">Erased</span>. So that the fear she carried becomes an inheritance for her daughter, and the grief an inheritance for everyone who loved her. The entity does not only take the life. It takes the life and leaves the fear behind, to do the rest of its work for us."
+        "text": "And when the aim is existence itself, the violation is complete. It is not enough that she dies. She is made to be gone. <span class=\"keyword\">Erased</span>. So that the fear she carried becomes an <span class=\"keyword\">inheritance</span> for her daughter, and the grief an inheritance for everyone who loved her. The entity does not only take the life. It takes the life and leaves the fear behind, to do the rest of its work for us."
     },
     {
         "id": 10,
-        "text": "That is why I say it is more than a crime. Crime ends at the law. This is trying to end something else entirely, striking directly at the lives of those who were all daughters, sisters, mothers, and partners."
+        "text": "That is why I say it is more than a crime. Crime ends at the law. This is trying to end something else entirely, striking directly at the lives of those who were all daughters, sisters, mothers, and partners. <span class=\"keyword\">Murdered</span>"
     },
     {
         "id": 11,
-        "text": "They were all daughters. Somewhere there is a parent who will never be the same, a parent whose heart now has a shape missing from it. A daughter is supposed to outlive the people who raised her; that is the quiet promise every family carries. These parents are living with proof that the promise can be broken."
+        "text": "They were all <span class=\"keyword\">daughters</span>. Somewhere there is a parent who will never be the same, a parent whose heart now has a shape missing from it. A daughter is supposed to outlive the people who raised her; that is the quiet promise every family carries. These parents are living with proof that the promise can be broken."
     },
     {
         "id": 12,
-        "text": "They were all sisters. Somewhere there is a sibling who shared their childhood, who fought with them and laughed with them and knows exactly what was taken, because sisters are the ones who carry a family's story. A sister's grief is private, and long, and rarely told."
+        "text": "They were all <span class=\"keyword\">sisters</span>. Somewhere there is a sibling who shared their childhood, who fought with them and laughed with them and knows exactly what was taken from them."
     },
     {
         "id": 13,
-        "text": "They were mothers. Somewhere there are children who said goodbye at the door not knowing it was the last time. They will grow up measuring every milestone against an absence, and every mother killed is a childhood interrupted, a whole future of advice, comfort, and reassurance that will never arrive."
+        "text": "They were <span class=\"keyword\">mothers</span>. Somewhere there are children who said goodbye at the door not knowing it was the last time. They will grow up measuring every milestone against an absence, and every parent killed is a childhood interrupted, a whole future of advice, comfort, and reassurance that will never arrive."
     },
     {
         "id": 14,
-        "text": "They were partners. Somewhere there is someone who chose them and was chosen, who planned a life with them, who knew the way they laughed, who now wakes on one side of an empty bed."
+        "text": "They were <span class=\"keyword\">partners</span>. Somewhere there is someone who chose them and was chosen, who planned a life with them, who knew the way they laughed, who now wakes on one side of an empty bed."
     },
     {
         "id": 15,
-        "text": "And the list does not end there. They were colleagues, aunties, grandmothers, neighbors, friends of friends, the woman in the next pew, the one you stood behind in the queue, the woman who loved running. Every single one was a whole person with a whole world inside her, people who loved her, and days she had already planned."
+        "text": "And the list does not end there. They were colleagues, teachers, grandparents, aunties, grandmothers, neighbours, friends of friends, the woman in the next pew, the one you stood behind in the queue, the woman who loved running, and so many more. Every single one was a whole person with a whole world inside her, people who loved her, and days she had already planned."
     },
     {
         "id": 16,
@@ -67,19 +71,19 @@
     },
     {
         "id": 17,
-        "text": "And then the last word arrives, the one that undoes everything: <span class=\"keyword\">Murdered</span>. Not died, because dying can be innocent, an accident, an illness, the body's own quiet failure. Murdered is a decision. Murdered is a hand. Murdered is the word that tells the truth, that these lives did not end, they were taken."
+        "text": "And then the last word arrives, the one that undoes everything: Murdered. Not died, because dying can be innocent, an accident, an illness, the body's own quiet failure. Murdered is a decision. Murdered is a hand. Murdered is the word that tells the truth, that these lives did not end, they were <span class=\"keyword\">taken</span>."
     },
     {
         "id": 18,
-        "text": "Faced with this reality, the people we depend on once again do not have solutions. They release statements, condolence messages, and so on, and with every statement, another heartbeat stops. Once again. That is the word I cannot escape. This is not their first failure and they know it, and we know it, and still every time we hold out a tired sliver of hope, and every time it is spent."
+        "text": "Faced with this reality, the people we depend on once again do not have solutions. They release statements, condolence messages, and so on, and with every statement, another <span class=\"keyword\">heartbeat stops</span>. Once again. That is the word I cannot escape. This is not their first failure, and they know it, and we know it, and still every time we hold out a tired sliver of hope, and every time it is spent."
     },
     {
         "id": 19,
-        "text": "They release statements. Condolence messages. Words, in other words. And words cost nothing, which is precisely the point, because what we need from them is not words. We need the next body not to be found. We need the mothers to come home. We need them to have done their job years ago. Instead, we get the ritual of grief, performed beautifully, performed sincerely, performed by people who will go home to their own locked doors afterwards."
+        "text": "They release statements. Condolence messages. <span class=\"keyword\">Words</span>, in other words. And words cost nothing, which is precisely the point, because what we need from them is not words. We need the next body not to be found. We need the mothers to come home. We need them to have done their job years ago. Instead, we get the ritual of grief, performed beautifully, performed sincerely, performed by people who will go home to their own locked doors afterwards."
     },
     {
         "id": 20,
-        "text": "And the terrible irony in the sentence: with every statement, another heartbeat stops. It is as if the two are connected, as if the statement and the death are synchronized. The words go out to comfort the last loss, and while we are reading them, the next one is already happening."
+        "text": "And the terrible irony in the sentence: with every statement, another heartbeat stops. It is as if the two are connected, as if the statement and the death are synchronised. The words go out to comfort the last loss, and while we are reading them, the next one is already happening."
     },
     {
         "id": 21,
@@ -99,11 +103,11 @@
     },
     {
         "id": 25,
-        "text": "What would make women feel that the people and systems around them are not simply waiting to mourn them? What would allow children to grow up without learning that a mother can disappear from an ordinary day? What would make families believe that the next headline will not contain someone they love?"
+        "text": "What would make women feel that the people and systems around them are not simply waiting to mourn them? What would allow children to grow up without learning that a parent can disappear from an ordinary day? What would make families believe that the next headline will not contain someone they love?"
     },
     {
         "id": 26,
-        "text": "None of us truly know because we do not even know what this is."
+        "text": "None of us truly know because we do not even know <span class=\"keyword\">what this is.</span>"
     },
     {
         "id": 27,
@@ -111,7 +115,7 @@
     },
     {
         "id": 28,
-        "text": "Is it crime? Is it hatred? Is it power? Is it entitlement? Is it the failure of institutions? Is it all of these things at once?"
+        "text": "Is it crime? Is it hatred? Is it power? Is it entitlement? Is it the failure of institutions? Is it all these things at once?"
     },
     {
         "id": 29,
@@ -139,19 +143,19 @@
     },
     {
         "id": 35,
-        "text": "This is the second wound, and we do it to ourselves. The first wound is delivered by whoever takes the lives; the second is the one we inflict on one another in the aftermath. The entity is not even in the room, and still we tear at each other."
+        "text": "This is the second wound, and we do it to ourselves. The first wound is delivered by whoever takes the lives; the second is the one we inflict on one another in the aftermath. The entity is not even in the room, and still, we tear at each other."
     },
     {
         "id": 36,
-        "text": "There are the women, fueled by uncertainty and fear. And their fear is not theoretical. It is waking up and reading that another body has been found. It is walking to the car with the keys already in hand. It is looking at every man who shadows too close. Fear like that has to go somewhere. It becomes a demand for answers, for safety, for someone to say this will not happen again. And when the demands are not met, they harden into grief, and grief hardens into <span class=\"keyword\">fury</span>. The women are not looking for a fight. They are looking for anyone to finally hear them."
+        "text": "There are the women, fuelled by uncertainty and fear. And their fear is not theoretical. It is waking up and reading that another body has been found. It is walking to the car with the keys already in hand. It is looking at every man who shadows too close. Fear like that must go somewhere. It becomes a demand for answers, for safety, for someone to say this will not happen again. And when the demands are not met, they harden into grief, and grief hardens into <span class=\"keyword\">fury</span>. The women are not looking for a fight. They are looking for anyone to finally hear them."
     },
     {
         "id": 37,
-        "text": "Then there are the men, feeling attacked and becoming contrarians. Because a demand aimed at \"men\" lands on every man, including the ones who have never raised a hand. And when someone who has done nothing is told that their whole category is under suspicion, the first instinct is not reflection, it is defense. You push back because you feel accused of a crime you did not commit. You argue the generalization because it feels unjust. And the more the argument heats up, the less anyone is listening, and the contrarian position hardens into a shield, until the actual deaths get lost behind the argument about who is allowed to feel accused."
+        "text": "Then there are the men, feeling attacked and becoming contrarians. Because a demand aimed at \"men\" lands on every man, including the ones who have never raised a hand. And when someone who has done nothing is told that their whole category is under suspicion, the first instinct is not reflection, it is defence. You push back because you feel accused of a crime you did not commit. You argue the generalisation because it feels unjust. And the more the argument heats up, the <span class=\"keyword\">less anyone is listening</span>, and the contrarian position hardens into a shield, until the actual deaths get lost behind the argument about who is allowed to feel accused."
     },
     {
         "id": 38,
-        "text": "And finally, the middle ground, either silent or playing both sides. These are the ones who choose comfort, or safety, or who genuinely do not know whose side to take, so they take none. They keep their heads down, they say nothing, or they say a little something to each camp so neither turns on them. But silence in this climate is not neutrality; it is <span class=\"keyword\">absence</span>. The women do not hear you. The men do not hear you. The dead especially do not hear you. You are not keeping the peace; you are simply not standing anywhere, and that is exactly what makes the middle ground so costly, because it is the largest group, and it does nothing."
+        "text": "And finally, the middle ground, either silent or playing both sides. These are the ones who choose comfort, or safety, or who genuinely do not know whose side to take, so they take none. They keep their heads down, they say nothing, or they say a little something to each camp so neither turns on them. But silence in this climate is not neutrality; it is <span class=\"keyword\">absence</span>. The women do not hear you. The men do not hear you. The dead especially do not hear you. You are not keeping the peace; you are simply not standing anywhere, and that is exactly what makes the middle ground so costly, because it is the <span class=\"keyword\">largest group</span>, and it does <span class=\"keyword\">nothing."
     },
     {
         "id": 39,
@@ -179,7 +183,7 @@
     },
     {
         "id": 45,
-        "text": "So the real question is not who is right. The real question is what we are spending our days on while the entity works. Being right or wrong in the end does not change the fact that, while we are arguing, this entity is picking off our sisters. Rightness does not shield them. A well-won debate does not hold a door for a woman walking home. The argument may comfort us, but it does not protect her, and protection is the only thing that costs anything here."
+        "text": "So, the real question is not who is right. The real question is what we are spending our days on while the entity works. Being right or wrong in the end does not change the fact that, while we are arguing, this entity is picking off our sisters. Rightness does not shield them. A well-won debate does not hold a door for a woman walking home. The argument may comfort us, but it does not protect her, and protection is the only thing that costs anything here."
     },
     {
         "id": 46,
@@ -187,7 +191,7 @@
     },
     {
         "id": 47,
-        "text": "This often leads to the familiar deflection: \"Yes, men die too.\" I want to sit with that sentence, because it is the one some people will not let you say. The moment you mourn the women, someone answers that men die too, as if grief were a rationed resource, as if honoring one loss meant stealing from another. And they are right that men die too. They are simply wrong to say it in that way, as a correction, as if the two losses competed for the same heart."
+        "text": "This often leads to the familiar deflection: \"<span class=\"keyword\">Yes, men die too.</span>\" I want to sit with that sentence, because it is the one some people will not let you say. The moment you mourn the women, someone answers that men die too, as if grief were a <span class=\"keyword\">rationed resource</span>, as if honouring one loss meant stealing from another. And they are right that men die too. They are simply wrong to say it in that way, as a correction, as if the two losses competed for the same heart."
     },
     {
         "id": 48,
@@ -195,15 +199,15 @@
     },
     {
         "id": 49,
-        "text": "But there is a difference in the shape of it, and I will not pretend otherwise. Men die in violence, plenty of them, and every death is a tragedy that deserves the same mourning. But women are being killed in a pattern that targets their womanhood itself. The threat follows them into the places they are supposed to be safe, and it is often carried by someone who claims to love them. That is a different fear. And both things can be true at once: men die too, and women are being picked off for being women."
+        "text": "But there is a difference in the shape of it, and I will not pretend otherwise. Men die in violence, plenty of them, and every death is a tragedy that deserves the same mourning. But these women are being killed in a pattern that targets their womanhood itself. The threat follows them into the places they are supposed to be safe. That is a different fear. And both things can be true at once: men die too, and women are being picked off for being women."
     },
     {
         "id": 50,
-        "text": "If we truly want to change any of them, we actually have to change them, not argue about them. You cannot fix the violence against women by winning a point about men, and you cannot fix the violence against men by proving women are not the only victims. Change does not happen in the comment section. It happens when the conditions that allow both kinds of violence stop being tolerated, and that requires all of us, not just the ones who feel most accused."
+        "text": "If we truly want to change any of them, we actually have to <span class=\"keyword\">change</span> them, not argue about them. You cannot fix the violence against women by winning a point about men, and you cannot fix the violence against men by proving women are not the only victims. Change does not happen in the comment section. It happens when the conditions that allow both kinds of violence stop being tolerated, and that requires all of us, not just the ones who feel most accused."
     },
     {
         "id": 51,
-        "text": "Being a contrarian does not really matter now. There will always be someone whose identity depends on being against whatever the room believes, someone who answers every motion with the opposite, not because it is true but because it is the opposition. And contrarians save nobody. They do not calm a single fearful woman. They just keep the argument alive so that the argument never has to become action."
+        "text": "Being a <span class=\"keyword\">contrarian</span> does not really matter now. There will always be someone whose identity depends on being against whatever the room believes, someone who answers every motion with the opposite, not because it is true but because it is the opposition. And contrarians save nobody. They do not calm a single fearful woman. They just keep the argument alive so that the <span class=\"keyword\">argument</span> never has to become <span class=\"keyword\">action</span>."
     },
     {
         "id": 52,
@@ -211,7 +215,7 @@
     },
     {
         "id": 53,
-        "text": "It will not make women less fearful just because you are not those men. Your innocence is real, but it does not travel. It does not walk behind a woman on an empty street. It does not reassure her when she hears footsteps. She does not know that you are not those men, and even if she did, one exception does not undo a pattern. Fear does not negotiate with statistics; it does not read your character reference and relax. So telling a woman \"not all men\" is not comfort. It is a request that she stop being afraid so that you can feel better about yourself."
+        "text": "It will not make women less fearful just because you are not those men. Your innocence is real, but it does not travel. It does not walk behind a woman on an empty street. It does not reassure her when she hears footsteps. She does not know that you are not those men, and even if she did, one exception does not undo a pattern. <span class=\"keyword\">Fear</span> does not <span class=\"keyword\">negotiate</span> with <span class=\"keyword\">statistics</span>; it does not read your character reference and relax. So telling a woman \"not all men\" is not comfort. It is a request that she stop being afraid so that you can feel better about yourself."
     },
     {
         "id": 54,
@@ -231,11 +235,11 @@
     },
     {
         "id": 58,
-        "text": "And protect the next generation. The children who said goodbye at the door. The ones not yet born who will inherit either our wisdom or our trauma. They do not get to choose what we hand them, so we have to choose for them. That is the whole weight of being the ones who came before. We can be the ones who pass down fear, or the ones who pass down something else."
+        "text": "And protect the <span class=\"keyword\">next generation</span>. The children who said goodbye at the door. The ones not yet born who will inherit either our wisdom or our trauma. They do not get to choose what we hand them, so we have to choose for them. That is the whole weight of being the ones who came before. We can be the ones who pass down fear, or the ones who pass down something else."
     },
     {
         "id": 59,
-        "text": "We must try to deny them the <span class=\"keyword\">trauma</span>. I keep coming back to that word, deny, because it is strange and it is right. Trauma can be refused. It is not fate; it is an inheritance we can choose not to collect and not to deliver. The fear a mother carries does not have to become the fear her daughter carries. The grief does not have to become a child's first lesson about the world."
+        "text": "We must try to <span class=\"keyword\">deny</span> them the <span class=\"keyword\">trauma</span>. I keep coming back to that word, deny, because it is strange and it is right. Trauma can be refused. It is not fate; it is an inheritance we can choose not to collect and not to deliver. The fear a mother carries does not have to become the fear her daughter carries. The grief does not have to become a child's first lesson about the world."
     },
     {
         "id": 60,
@@ -247,7 +251,7 @@
     },
     {
         "id": 62,
-        "text": "This means we must recognize that a protest to a protest only keeps us <span class=\"keyword\">stagnant</span> in the long run. Water that is stagnant is not moving, and it is also not clean; it breeds. That is what a protest-to-a-protest produces: not motion, but stagnation. And out of stagnation comes the same thing again, the next argument, the next headline, the next name."
+        "text": "This means we must recognise that a protest to a protest only keeps us <span class=\"keyword\">stagnant</span> in the long run. Water that is stagnant is not moving, and it is also not clean; it breeds. That is what a protest-to-a-protest produces: not motion, but stagnation. And out of stagnation comes the same thing again, the next argument, the next headline, the next name."
     },
     {
         "id": 63,
@@ -263,7 +267,7 @@
     },
     {
         "id": 66,
-        "text": "There is something else the words do, and it is not small. They mark that someone noticed, that someone refused to scroll past another body being found, that in a country which can be silent, one voice said the names out loud. The dead do not hear it, we know that, but the living do. A woman reading this learns she is not alone in the fear. A man reading this learns that being one of the not-those-men means more than saying it."
+        "text": "There is something else the words do, and it is not small. They mark that someone noticed that someone refused to scroll past another body being found, that in a country which can be silent, one voice said the names out loud. The dead do not hear it, we know that, but the living do. A woman reading this learns she is not alone in the fear. A man reading this learns that being one of the not-those-men means more than saying it."
     },
     {
         "id": 67,
@@ -283,7 +287,7 @@
     },
     {
         "id": 71,
-        "text": "A sentence that runs from one name to the next, and the distance between them is measured in the very thing this piece cries out against. Between Uyinene and Elizabeth, there are more names, so many that you could not fit them all into one breath, and that is the indictment. Each one was somebody's daughter, sister, mother, partner. Each one had a day planned. Each one deserved to be the last name on the list."
+        "text": "A sentence that runs from one name to the next, and the distance between them is measured in the very thing this piece cries out against. Between the past and the present, there are more names, so many that you could not fit them all into one breath, and that is the <span class=\"keyword\">indictment</span>. Each one was somebody's daughter, sister, mother, partner. Each one had a day planned. Each one deserved to be the last name on the list."
     },
     {
         "id": 72,

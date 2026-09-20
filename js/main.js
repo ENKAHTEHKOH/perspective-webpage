@@ -1,4 +1,5 @@
-/* 
+/*
+<-/* 
   Global state tracker. Kept module-scoped so asynchronous 
   playback controls and animation loops can coordinate state 
   without dragging in a heavy state-management library.
@@ -158,7 +159,7 @@ function runNameSequence() {
                 renderSmoothPermanentGrid(currentNamesArray, container);
             }, 500);
         }
-    }, 2500); 
+    }, 2000); 
 }
 
 // UI State Controller managing control button visibilities

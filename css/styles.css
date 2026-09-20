@@ -1,3 +1,8 @@
+/* 
+  Design tokens: We use an off-black background (#121214) instead of 
+  pure #000000 to soften the contrast against the neon purple accents, 
+  reducing eye strain during long-form reading sessions.
+*/
 :root {
     --bg-color: #121214;
     --text-color: #e4e4e7;
@@ -26,6 +31,7 @@ article {
     max-width: var(--max-width);
 }
 
+/* Fluid typography scaling prevents awkward text wrapping on mid-sized viewports */
 h1 {
     font-size: clamp(2rem, 4vw, 2.75rem);
     line-height: 1.2;
@@ -39,7 +45,11 @@ p {
     margin-bottom: 1.5rem;
 }
 
-/* Neon Keyword Styling */
+/* 
+  Neon Keyword Styling: Multiple box-shadow layers simulate 
+  diffuse light emission. Keep transition durations snappy (0.2s) 
+  so the hover effect feels reactive rather than sluggish.
+*/
 .keyword {
     color: var(--accent-purple);
     background-color: var(--purple-tint);
@@ -57,7 +67,7 @@ p {
                 0 0 30px rgba(192, 132, 252, 0.3);
 }
 
-/* Scroll Progress Bar */
+/* Scroll Progress Bar pinned to viewport top; z-index 1000 ensures it stays above all content layers */
 .scroll-progress {
     position: fixed;
     top: 0;
@@ -83,8 +93,14 @@ p {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap; /* Ensures buttons wrap cleanly on mobile screens */
 }
 
+/* 
+  A fixed min-height here is critical. Without it, the section 
+  collapses vertically when names cycle through empty states, 
+  causing disruptive layout shifts for the reader.
+*/
 .memorial-stage {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     color: #ffffff;
@@ -128,8 +144,7 @@ p {
     transform: scale(1.05);
 }
 
-/* Add these styles to your existing styles.css */
-
+/* Progress wrapper for incremental name rendering loops */
 .name-progress-wrapper {
     width: 100%;
     max-width: 320px;
@@ -161,19 +176,12 @@ p {
     letter-spacing: 0.05em;
 }
 
-/* Smooth transition wrapper for the final grid */
+/* Smooth transition wrapper for the final grid reveal once data population finishes */
 .memorial-grid-wrapper {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
+
 .memorial-grid-wrapper.visible {
     opacity: 1;
-}
-
-.memorial-controls {
-    margin: 1.5rem 0;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensures buttons wrap cleanly on mobile screens */
 }

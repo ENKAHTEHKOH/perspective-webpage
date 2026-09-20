@@ -1,11 +1,18 @@
-// Global state variables
+/* 
+  Global state tracker. Kept module-scoped so asynchronous 
+  playback controls and animation loops can coordinate state 
+  without dragging in a heavy state-management library.
+*/
 let memorialInterval = null;
 let currentIndex = 0;
 let backgroundAudio = null;
 let currentNamesArray = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Fetch and render the JSON content dynamically
+    /* 
+      We pull essay content dynamically to keep the raw HTML template 
+      pristine and decoupled from heavy narrative arrays.
+    */
     fetch('content/essay.json')
         .then(response => response.json())
         .then(data => {
@@ -14,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const titleHTML = `<h1>${data.title}</h1>`;
             const paragraphsHTML = data.sections.map(section => `<p>${section.text}</p>`).join('');
             
-            // Append the memorial section container at the bottom with the End button included
             const memorialHTML = `
                 <section class="memorial-container" id="memorial-container">
                     <h3>Some of The Names</h3>
@@ -38,11 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
             
             articleElement.innerHTML = titleHTML + paragraphsHTML + memorialHTML;
 
-            currentNamesArray = data.memorialNames;
+        currentNamesArray = data.memorialNames;
             backgroundAudio = new Audio('audio/song.mp3');
             backgroundAudio.loop = true;
 
-            // Event Listeners for all controls
+            // Bind UI event handlers
             document.getElementById('play-btn').addEventListener('click', startTribute);
             document.getElementById('stop-btn').addEventListener('click', stopTribute);
             document.getElementById('continue-btn').addEventListener('click', continueTribute);
@@ -51,7 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error loading essay data:', error));
 
-    // Scroll Progress Bar Logic
+    /* 
+      Injected programmatically to avoid cluttering static markup 
+      with non-essential structural wrappers.
+    */
     const progressBar = document.createElement('div');
     progressBar.className = 'scroll-progress';
     document.body.prepend(progressBar);
@@ -85,28 +94,28 @@ function continueTribute() {
     runNameSequence();
 }
 
-// NEW: Restart Action
 function restartTribute() {
-    // 1. Clear any running intervals to prevent overlapping timers
     clearInterval(memorialInterval);
     memorialInterval = null;
 
-    // 2. Reset index and clear the display stage / permanent grid
     currentIndex = 0;
     const container = document.getElementById('memorial-display');
-    container.innerHTML = ''; // Wipes out existing stage or grid
+    container.innerHTML = ''; 
 
-    // 3. Reset UI states and restart audio from the beginning
     toggleButtons('playing');
     document.getElementById('progress-wrapper').style.display = 'block';
     
-    backgroundAudio.currentTime = 0; // Rewind song to start
+    backgroundAudio.currentTime = 0;
     fadeInAudio(backgroundAudio);
     
     runNameSequence();
 }
 
-// Core loop for flashing names sequentially
+/* 
+  Core loop for flashing names. 
+  Cadence is locked at 2500ms: long enough for human cognitive processing 
+  of a personal name, but fast enough to maintain emotional momentum.
+*/
 function runNameSequence() {
     const container = document.getElementById('memorial-display');
     const totalNames = currentNamesArray.length;
@@ -121,6 +130,11 @@ function runNameSequence() {
 
     memorialInterval = setInterval(() => {
         if (currentIndex < totalNames) {
+            /* 
+              Manual opacity toggle trick: dropping to 0 then scheduling 
+              back to 1 forces a layout recalculation, cleanly re-triggering 
+              the CSS fade transition on text updates.
+            */
             stage.style.opacity = 0;
             stage.textContent = currentNamesArray[currentIndex];
             setTimeout(() => { stage.style.opacity = 1; }, 100);
@@ -135,7 +149,6 @@ function runNameSequence() {
             memorialInterval = null;
             document.getElementById('progress-wrapper').style.display = 'none';
             
-            // Show restart button once sequence completes
             document.getElementById('stop-btn').style.display = 'none';
             document.getElementById('restart-btn').style.display = 'inline-block';
 
@@ -148,7 +161,7 @@ function runNameSequence() {
     }, 2500); 
 }
 
-// UI State Controller (Expanded to handle Restart visibility)
+// UI State Controller managing control button visibilities
 function toggleButtons(state) {
     const playBtn = document.getElementById('play-btn');
     const stopBtn = document.getElementById('stop-btn');
@@ -160,17 +173,21 @@ function toggleButtons(state) {
         playBtn.style.display = 'none';
         continueBtn.style.display = 'none';
         stopBtn.style.display = 'inline-block';
-        endBtn.style.display = 'inline-block';      // Visible while playing
+        endBtn.style.display = 'inline-block';      
         restartBtn.style.display = 'inline-block';
     } else if (state === 'stopped') {
         stopBtn.style.display = 'none';
         continueBtn.style.display = 'inline-block';
-        endBtn.style.display = 'none';              // Hide End when paused
+        endBtn.style.display = 'none';              
         restartBtn.style.display = 'inline-block';
     }
 }
 
-// Audio Fade-In Algorithm
+/* 
+  Browsers aggressively block unprompted audio. 
+  The catch block gracefully handles policy rejections without throwing 
+  console noise that scares users.
+*/
 function fadeInAudio(audio) {
     audio.volume = 0;
     audio.play().catch(e => console.log("Audio play blocked by browser policy:", e));
@@ -185,7 +202,7 @@ function fadeInAudio(audio) {
     }, 100);
 }
 
-// Audio Fade-Out Algorithm
+// Fades audio out to prevent jarring sonic drop-offs when pausing
 function fadeOutAudio(audio) {
     let fadeStep = setInterval(() => {
         if (audio.volume > 0.1) {
@@ -216,11 +233,17 @@ function renderSmoothPermanentGrid(names, container) {
     wrapper.appendChild(grid);
     container.appendChild(wrapper);
 
+    /* 
+      50ms delay trick: ensures the browser has painted the newly 
+      appended DOM element before we toggle the .visible class, 
+      guaranteeing the CSS opacity transition actually fires.
+    */
     setTimeout(() => {
         wrapper.classList.add('visible');
     }, 50);
 }
 
+// Allows users to skip the timed ticker and jump straight to the full grid view
 function endTribute() {
     clearInterval(memorialInterval);
     memorialInterval = null;
@@ -230,10 +253,10 @@ function endTribute() {
     const container = document.getElementById('memorial-display');
     container.innerHTML = ''; 
 
-    document.getElementById('stop-btn').style.display = 'none';
+    document.getElementById('stop-btn').style.display = 'inline-block';
     document.getElementById('continue-btn').style.display = 'none';
     document.getElementById('end-btn').style.display = 'none';
     document.getElementById('restart-btn').style.display = 'inline-block';
 
-renderSmoothPermanentGrid(currentNamesArray, container);
+    renderSmoothPermanentGrid(currentNamesArray, container);
 }

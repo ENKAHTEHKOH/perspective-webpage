@@ -5,6 +5,7 @@ let backgroundAudio = null;
 let currentNamesArray = [];
 
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. Fetch and render the JSON content dynamically
     fetch('content/essay.json')
         .then(response => response.json())
         .then(data => {
@@ -13,15 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const titleHTML = `<h1>${data.title}</h1>`;
             const paragraphsHTML = data.sections.map(section => `<p>${section.text}</p>`).join('');
             
-            // Added Restart button to the controls template
+            // Append the memorial section container at the bottom with the End button included
             const memorialHTML = `
                 <section class="memorial-container" id="memorial-container">
-                    <h3>The Names</h3>
+                    <h3>Some of The Names</h3>
                     <p>Do not let them be erased.</p>
                     <div class="memorial-controls">
                         <button class="memorial-btn" id="play-btn">Play Tribute</button>
                         <button class="memorial-btn" id="stop-btn" style="display: none;">Stop</button>
                         <button class="memorial-btn" id="continue-btn" style="display: none;">Continue</button>
+                        <button class="memorial-btn" id="end-btn" style="display: none;">End / Skip</button>
                         <button class="memorial-btn" id="restart-btn" style="display: none;">Restart</button>
                     </div>
                     <div class="name-progress-wrapper" id="progress-wrapper" style="display: none;">
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('play-btn').addEventListener('click', startTribute);
             document.getElementById('stop-btn').addEventListener('click', stopTribute);
             document.getElementById('continue-btn').addEventListener('click', continueTribute);
+            document.getElementById('end-btn').addEventListener('click', endTribute);
             document.getElementById('restart-btn').addEventListener('click', restartTribute);
         })
         .catch(error => console.error('Error loading essay data:', error));
@@ -150,16 +153,19 @@ function toggleButtons(state) {
     const playBtn = document.getElementById('play-btn');
     const stopBtn = document.getElementById('stop-btn');
     const continueBtn = document.getElementById('continue-btn');
+    const endBtn = document.getElementById('end-btn');
     const restartBtn = document.getElementById('restart-btn');
 
     if (state === 'playing') {
         playBtn.style.display = 'none';
         continueBtn.style.display = 'none';
         stopBtn.style.display = 'inline-block';
-        restartBtn.style.display = 'inline-block'; // Allow restarting even while playing
+        endBtn.style.display = 'inline-block';      // Visible while playing
+        restartBtn.style.display = 'inline-block';
     } else if (state === 'stopped') {
         stopBtn.style.display = 'none';
         continueBtn.style.display = 'inline-block';
+        endBtn.style.display = 'none';              // Hide End when paused
         restartBtn.style.display = 'inline-block';
     }
 }
@@ -213,4 +219,21 @@ function renderSmoothPermanentGrid(names, container) {
     setTimeout(() => {
         wrapper.classList.add('visible');
     }, 50);
+}
+
+function endTribute() {
+    clearInterval(memorialInterval);
+    memorialInterval = null;
+
+    document.getElementById('progress-wrapper').style.display = 'none';
+
+    const container = document.getElementById('memorial-display');
+    container.innerHTML = ''; 
+
+    document.getElementById('stop-btn').style.display = 'none';
+    document.getElementById('continue-btn').style.display = 'none';
+    document.getElementById('end-btn').style.display = 'none';
+    document.getElementById('restart-btn').style.display = 'inline-block';
+
+renderSmoothPermanentGrid(currentNamesArray, container);
 }

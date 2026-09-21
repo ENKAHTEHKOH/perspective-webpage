@@ -73,8 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Tribute Actions
 function startTribute() {
+    clearInterval(memorialInterval); // Guard: clear any ghost timers
+    memorialInterval = null;
+    
     currentIndex = 0;
     toggleButtons('playing');
     document.getElementById('progress-wrapper').style.display = 'block';
@@ -90,6 +92,9 @@ function stopTribute() {
 }
 
 function continueTribute() {
+    clearInterval(memorialInterval); // Guard: prevent stacking intervals
+    memorialInterval = null;
+
     toggleButtons('playing');
     fadeInAudio(backgroundAudio);
     runNameSequence();
@@ -110,6 +115,25 @@ function restartTribute() {
     fadeInAudio(backgroundAudio);
     
     runNameSequence();
+}
+
+// Skip straight to the complete record
+function endTribute() {
+    clearInterval(memorialInterval);
+    memorialInterval = null;
+
+    document.getElementById('progress-wrapper').style.display = 'none';
+
+    const container = document.getElementById('memorial-display');
+    container.innerHTML = ''; 
+
+    // Corrected: Hide stop button on the final grid view
+    document.getElementById('stop-btn').style.display = 'none';
+    document.getElementById('continue-btn').style.display = 'none';
+    document.getElementById('end-btn').style.display = 'none';
+    document.getElementById('restart-btn').style.display = 'inline-block';
+
+    renderSmoothPermanentGrid(currentNamesArray, container);
 }
 
 /* 

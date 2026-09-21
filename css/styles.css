@@ -185,3 +185,27 @@ p {
 .memorial-grid-wrapper.visible {
     opacity: 1;
 }
+
+.memorial-grid .grid-name {
+  box-shadow: none;
+}
+
+@media (hover: none) {
+  .keyword:hover,
+  .memorial-btn:hover {
+    background-color: var(--purple-tint);
+    box-shadow: var(--purple-glow);
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memorial-stage,
+  .memorial-grid-wrapper,
+  .keyword,
+  .memorial-btn,
+  .name-progress-fill,
+  .scroll-progress {
+    transition: none;
+  }
+}
